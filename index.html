@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G-Flow | Premium G-Code Converter</title>
+    <meta name="description" content="Instant G-code translation between CNC machine types with real-time editing and change tracking.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>G-FLOW<span>.</span></h1>
+        </div>
+        <div class="controls">
+            <div class="control-group">
+                <label for="source-machine">From</label>
+                <select id="source-machine">
+                    <option value="okuma">Okuma</option>
+                    <option value="mori">Mori - Fanuc</option>
+                    <option value="goodwell">Goodwell - Fanuc</option>
+                </select>
+            </div>
+            <div class="arrow" id="swap-btn" title="Swap Machines" style="cursor: pointer; transition: transform 0.3s ease;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--text-secondary)">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </div>
+            <div class="control-group">
+                <label for="target-machine">To</label>
+                <select id="target-machine">
+                    <option value="mori">Mori - Fanuc</option>
+                    <option value="okuma">Okuma</option>
+                    <option value="goodwell">Goodwell - Fanuc</option>
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <main id="app-container">
+        <section class="panel" id="input-panel">
+            <div class="panel-header">
+                <span class="panel-title">Input G-Code</span>
+                <span class="panel-stats" id="input-stats">0 Lines</span>
+            </div>
+            <div class="editor-container">
+                <textarea id="input-editor" placeholder="Paste or type your G-code here..." spellcheck="false"></textarea>
+            </div>
+        </section>
+
+        <section class="panel" id="output-panel">
+            <div class="panel-header">
+                <span class="panel-title">Converted Output</span>
+                <span class="panel-stats" id="output-stats">0 Lines</span>
+            </div>
+            <div class="editor-container">
+                <textarea id="output-editor" placeholder="Converted code will appear here..." spellcheck="false"></textarea>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="status-item">
+            <div class="status-indicator" id="status-dot"></div>
+            <span id="status-text">Ready</span>
+        </div>
+        <div class="status-item">
+            <span>&copy; 2026 G-Flow Advanced</span>
+        </div>
+    </footer>
+
+    <script src="converter.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
