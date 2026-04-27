@@ -2,7 +2,7 @@
 
 ![G-Flow UI Preview](images/image_1.png)
 
-**G-Flow** on korkean suorituskyvyn verkkosovellus, joka on suunniteltu kääntämään G-koodia eri CNC-standardien (esim. Fanuc, Okuma, GRBL) välillä reaaliajassa. Sovelluksen tyylikäs "Antigravity"-tumma teema ja selkeä käyttöliittymä takaavat nopean ja turvallisen konekoodin muokkauksen.
+**G-Flow** on korkean suorituskyvyn verkkosovellus, joka on suunniteltu kääntämään G-koodia eri CNC-standardien ( Fanuc ja Okuma) välillä reaaliajassa. Sovelluksen tyylikäs "Antigravity"-tumma teema ja selkeä käyttöliittymä takaavat nopean ja turvallisen konekoodin muokkauksen.
 
 ---
 
@@ -14,7 +14,7 @@
 
 ---
 
-**G-Flow** is a high-performance web application designed to translate G-code between CNC standards (Fanuc, Okuma, GRBL, etc.) in real-time. Built with a premium "Antigravity" dark-mode UI, it ensures safe and fast machine code adaptation.
+**G-Flow** is a high-performance web application designed to translate G-code between CNC standards (Fanuc & Okuma) in real-time. Built with a premium "Antigravity" dark-mode UI, it ensures safe and fast machine code adaptation.
 
 ---
 
